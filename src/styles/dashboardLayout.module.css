@@ -1,0 +1,64 @@
+/* dashboardLayout.module.css */
+
+/* Dashboard background */
+.adminDashboardLayout {
+    /*background: linear-gradient(to bottom, #e0f7fa, #ffffff);*/
+    background-color: #cee028;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbarContainer {
+    background-color: #003366;
+    padding: 10px;
+    color: #ffffff;
+    height: 60px; /* Fixed height */
+}
+
+/* Layout styles */
+.layoutMain {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebarContainer {
+    background-color: #005580;
+    color: #ffffff;
+    width: 250px; /* Fixed width */
+    min-height: calc(100vh - 60px); /* Adjust for navbar */
+}
+
+.sidebarContainer a {
+    color: #ffffff; /* Sidebar link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for links */
+    display: block; /* Block display for full width */
+}
+
+.sidebarContainer a:hover {
+    background-color: #004d66; /* Darken on hover */
+}
+
+/* Card Styles (Optional) */
+.card {
+    background-color: #ffffff; /* Card background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 20px; /* Card padding */
+    text-align: center; /* Center text */
+    margin: 10px; /* Margin for spacing */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Example font */
+    color: #333; /* Darker text for headers */
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Add padding */
+}
